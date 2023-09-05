@@ -1,0 +1,21 @@
+{
+  "name": "Reddit Redirect",
+  "description": "redirect to old skin w/o need of account",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": [
+        "Scripts/Main.js"
+      ],
+      "permissions": [
+        "activeTab"
+      ],
+      "run_at": "document_start",
+      "matches": [
+        "*://*.reddit.com/*",
+        "*://www.reddit.com/*"
+      ]
+    }
+  ]
+}
